@@ -14,7 +14,7 @@
 
 <p align="center">
   <a href="https://discord.com/invite/aAn3KkaJzM">
-    <img src="https://dcbadge.vercel.app/api/server/aAn3KkaJzM?style=flat&theme=clean-inverted" alt="Discord" />
+    <img src="https://img.shields.io/discord/925862084573552642" alt="Discord" />
   </a>
   <img src="https://img.shields.io/librariesio/github/zobweyt/Giveaways" alt="Dependencies" />
   <img src="https://img.shields.io/github/created-at/zobweyt/Giveaways" alt="Creation Date" />
