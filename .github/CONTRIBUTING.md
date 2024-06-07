@@ -4,7 +4,7 @@ Contributions are welcome to enhance this repository's functionality and usabili
 
 ## 💬 Discussion
 
-We prefer all changes to the project to be discussed beforehand, either in an [issue](https://github.com/zobweyt/Discord.Net.Template/issues/new), or in a discussion in our [server](https://dsc.gg/zobweyt).
+We prefer all changes to the project to be discussed beforehand, either in an [issue](https://github.com/zobweyt/Giveaways/issues/new), or in a discussion in our [server](https://dsc.gg/zobweyt).
 
 ## 🚀 Guide
 
@@ -27,7 +27,7 @@ where possible.
 
 Increase the version numbers in any files to the new version that your changes would represent.
 
-*The versioning scheme we use is [semantic versioning](http://semver.org/). For the versions available, see the [tags on this repository](https://github.com/zobweyt/Discord.Net.Template/tags).*
+*The versioning scheme we use is [semantic versioning](http://semver.org/). For the versions available, see the [tags on this repository](https://github.com/zobweyt/Giveaways/tags).*
 
 ## ✅ Conclusion
 
