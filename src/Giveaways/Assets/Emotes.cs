@@ -2,8 +2,6 @@ using Discord;
 
 namespace Giveaways;
 
-// TODO: Adjust the emotes to fit your own.
-
 /// <summary>
 /// Represents a constant set of predefined <see cref="Emote"/> values.
 /// </summary>
