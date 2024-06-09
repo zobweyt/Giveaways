@@ -2,8 +2,6 @@ using Discord.Interactions;
 
 namespace Giveaways;
 
-// TODO: Learn about the post-execution interaction results.
-
 /// <summary>
 /// Represents the result of an interaction used to handle it at the
 /// <a href="https://docs.discordnet.dev/guides/int_framework/post-execution">post-execution</a>.

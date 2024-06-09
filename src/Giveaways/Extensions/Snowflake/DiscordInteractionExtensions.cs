@@ -24,8 +24,8 @@ public static class DiscordInteractionExtensions
             .Build();
 
         if (interaction.HasResponded)
-            await interaction.FollowupAsync(embed: embed).ConfigureAwait(false);
+            await interaction.FollowupAsync(embed: embed, ephemeral: true).ConfigureAwait(false);
         else
-            await interaction.RespondAsync(embed: embed).ConfigureAwait(false);
+            await interaction.RespondAsync(embed: embed, ephemeral: true).ConfigureAwait(false);
     }
 }
