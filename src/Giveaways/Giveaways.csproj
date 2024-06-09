@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <ImplicitUsings>disable</ImplicitUsings>
     <UserSecretsId>9129c8de-76cd-4500-bd4c-6bd38b81374e</UserSecretsId>
     <RootNamespace>Giveaways</RootNamespace>
     <Version>1.0.0</Version>

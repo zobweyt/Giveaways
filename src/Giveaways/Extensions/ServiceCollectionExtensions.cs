@@ -1,4 +1,6 @@
+using System;
 using Fergun.Interactive;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Giveaways;
 

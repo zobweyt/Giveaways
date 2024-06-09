@@ -1,3 +1,5 @@
+using System;
+using System.IO;
 using Discord;
 using Discord.Addons.Hosting;
 using Discord.Interactions;
@@ -6,6 +8,9 @@ using Giveaways;
 using Giveaways.Data;
 using Giveaways.Services;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory);
 

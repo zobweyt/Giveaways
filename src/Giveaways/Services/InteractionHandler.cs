@@ -1,8 +1,14 @@
+using System;
 using System.Reflection;
+using System.Threading;
+using System.Threading.Tasks;
 using Discord;
 using Discord.Addons.Hosting;
 using Discord.Interactions;
 using Discord.WebSocket;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
 namespace Giveaways.Services;
