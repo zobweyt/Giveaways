@@ -17,7 +17,8 @@
     <img src="https://img.shields.io/discord/925862084573552642" alt="Discord" />
   </a>
   <img src="https://img.shields.io/librariesio/github/zobweyt/Giveaways" alt="Dependencies" />
-  <img src="https://img.shields.io/github/created-at/zobweyt/Giveaways" alt="Creation Date" />
+  <img src="https://img.shields.io/github/actions/workflow/status/zobweyt/Giveaways/dotnet.yml
+" alt="Status" />
 </p>
 
 ## 🗝️ Features
