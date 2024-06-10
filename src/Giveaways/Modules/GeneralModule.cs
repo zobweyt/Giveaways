@@ -32,6 +32,4 @@ public class GeneralModule(IOptions<ReferenceOptions> options) : ModuleBase
 
         await RespondAsync(embed: embed, components: components);
     }
-
-    // TODO: Define new general commands here.
 }
