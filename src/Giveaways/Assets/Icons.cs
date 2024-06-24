@@ -16,7 +16,7 @@ public static class Icons
     public const string Cross = "https://cdn.discordapp.com/emojis/1248985326693908614.webp?size=96&quality=lossless";
 
     /// <summary>
-    /// The icon used to indicate a warning state.
+    /// The icon used to indicate an informational state.
     /// </summary>
-    public const string Exclamation = "https://cdn.discordapp.com/emojis/1248987340073074698.webp?size=96&quality=lossless";
+    public const string Info = "https://cdn.discordapp.com/emojis/1254859899595260027.webp?size=96&quality=lossless";
 }

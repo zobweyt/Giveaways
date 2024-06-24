@@ -10,7 +10,7 @@ public static class Colors
     /// <summary>
     /// The color used to indicate an informative state.
     /// </summary>
-    public static readonly Color Primary = new(88, 101, 242);
+    public static readonly Color Primary = new(59, 136, 195);
 
     /// <summary>
     /// The color used to indicate an informative state.
