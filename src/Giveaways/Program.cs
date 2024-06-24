@@ -48,6 +48,7 @@ builder.Services.AddInteractiveService(config =>
     config.ProcessSinglePagePaginators = true;
 });
 
+builder.Services.AddSingleton<InteractionRouter>();
 builder.Services.AddHostedService<InteractionHandler>();
 
 var host = builder.Build();
