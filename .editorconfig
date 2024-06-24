@@ -57,6 +57,9 @@ dotnet_code_quality_unused_parameters = all:suggestion
 # Suppression preferences
 dotnet_remove_unnecessary_suppression_exclusions = none
 
+# Namespace preferences
+dotnet_style_namespace_match_folder = false
+
 ###############################################################################
 # C# Code Conventions
 ###############################################################################
