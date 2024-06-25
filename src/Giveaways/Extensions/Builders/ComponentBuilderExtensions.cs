@@ -15,7 +15,7 @@ public static class ComponentBuilderExtensions
     /// <param name="emote">An emote to be used with this link.</param>
     /// <param name="url">The URL of this link.</param>
     /// <returns>The current builder.</returns>
-    public static ComponentBuilder WithLink(this ComponentBuilder builder, string label, Emote emote, string url)
+    public static ComponentBuilder WithLink(this ComponentBuilder builder, string label, string url, IEmote? emote = null)
     {
         var button = new ButtonBuilder()
             .WithLabel(label)
