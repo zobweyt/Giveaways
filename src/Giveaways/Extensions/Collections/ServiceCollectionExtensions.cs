@@ -7,7 +7,7 @@ namespace Giveaways;
 /// <summary>
 /// Provides extension methods for <see cref="IServiceCollection"/>.
 /// </summary>
-internal static class ServiceCollectionExtensions
+public static class ServiceCollectionExtensions
 {
     /// <summary>
     /// Adds <see cref="InteractiveService"/> and optionally configures an <see cref="InteractiveConfig"/> along with
