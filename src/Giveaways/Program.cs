@@ -7,6 +7,8 @@ using Discord.WebSocket;
 using Giveaways;
 using Giveaways.Data;
 using Giveaways.Services;
+using Hangfire;
+using Hangfire.Storage.SQLite;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,6 +20,8 @@ var builder = Host.CreateApplicationBuilder(args);
 
 builder.Services.AddNamedOptions<StartupOptions>();
 
+builder.Services.AddHangfire(options => options.UseSQLiteStorage());
+builder.Services.AddHangfireServer();
 builder.Services.AddSqlite<AppDbContext>(builder.Configuration.GetConnectionString("Default"));
 
 builder.Services.AddDiscordHost((config, _) =>
@@ -49,6 +53,9 @@ builder.Services.AddInteractiveService(config =>
 
 builder.Services.AddSingleton<InteractionRouter>();
 builder.Services.AddHostedService<InteractionHandler>();
+
+builder.Services.AddScoped<GiveawayFormatter>();
+builder.Services.AddScoped<GiveawayService>();
 builder.Services.AddSingleton<GiveawayScheduler>();
 
 var host = builder.Build();
