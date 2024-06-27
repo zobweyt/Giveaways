@@ -16,7 +16,12 @@ public static class Icons
     public const string Cross = "https://cdn.discordapp.com/emojis/1248985326693908614.webp?size=96&quality=lossless";
 
     /// <summary>
-    /// The icon used to indicate an informational state.
+    /// The icon used with active giveaway messages.
     /// </summary>
-    public const string Info = "https://cdn.discordapp.com/emojis/1254859899595260027.webp?size=96&quality=lossless";
+    public const string Gift = "https://cdn.discordapp.com/emojis/1250221865000243250.webp?size=96&quality=lossless";
+
+    /// <summary>
+    /// The icon used with ended giveaway messages.
+    /// </summary>
+    public const string Confetti = "https://cdn.discordapp.com/emojis/1250418778949287947.webp?size=96&quality=lossless";
 }
