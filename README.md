@@ -21,7 +21,8 @@
 </p>
 
 ## 🗝️ Features
-Coming soon…
+* Host unlimited giveaways at your discord servers.
+* Manually end giveaways via a [message command](https://discord.com/developers/docs/tutorials/upgrading-to-application-commands#message-commands).
 
 ## 🗺️ Roadmap
 
