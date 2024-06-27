@@ -31,7 +31,7 @@ public class GiveawayScheduler
     /// </summary>
     /// <param name="messageId">The ID of the message associated with the giveaway.</param>
     /// <param name="expiresAt">The expiration date and time of the giveaway.</param>
-    public void Schedule(ulong messageId, DateTime expiresAt) 
+    public void Schedule(ulong messageId, DateTime expiresAt)
         => _client.Schedule<GiveawayService>(service => service.ExpireAsync(messageId), expiresAt);
 
     /// <summary>
@@ -39,7 +39,7 @@ public class GiveawayScheduler
     /// </summary>
     /// <param name="messageId">The ID of the message associated with the giveaway.</param>
     /// <param name="state">The new state to set for the job.</param>
-    public void ChangeState(ulong messageId, IState state) 
+    public void ChangeState(ulong messageId, IState state)
         => _client.ChangeState(GetScheduledJob(messageId).Key, state);
 
     /// <summary>
@@ -47,6 +47,6 @@ public class GiveawayScheduler
     /// </summary>
     /// <param name="messageId">The ID of the message associated with the giveaway.</param>
     /// <returns>A key-value pair representing the scheduled job.</returns>
-    public KeyValuePair<string, ScheduledJobDto?> GetScheduledJob(ulong messageId) 
+    public KeyValuePair<string, ScheduledJobDto?> GetScheduledJob(ulong messageId)
         => _monitor.ScheduledJobs(0, int.MaxValue).FirstOrDefault(j => (ulong)j.Value.Job.Args[0] == messageId);
 }
