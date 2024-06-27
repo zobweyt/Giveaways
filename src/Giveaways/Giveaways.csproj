@@ -11,17 +11,9 @@
 
   <PropertyGroup Condition="$(Configuration) == Release">
     <DebugType>None</DebugType>
-    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
     <PublishSingleFile>true</PublishSingleFile>
-    <PublishTrimmed>true</PublishTrimmed>
     <SelfContained>true</SelfContained>
-    <SuppressTrimAnalysisWarnings>true</SuppressTrimAnalysisWarnings>
-    <TrimMode>partial</TrimMode>
   </PropertyGroup>
-
-  <ItemGroup Condition="$(Configuration) == Release">
-    <TrimmerRootAssembly Include="Newtonsoft.Json" />
-  </ItemGroup>
 
   <ItemGroup>
     <Content Include="Properties\launchSettings.json" />
@@ -31,6 +23,9 @@
     <PackageReference Include="Discord.Addons.Hosting" Version="6.0.0" />
     <PackageReference Include="Discord.Net.Interactions" Version="3.14.0" />
     <PackageReference Include="Fergun.Interactive" Version="1.7.5" />
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.8.14" />
+    <PackageReference Include="Hangfire.Core" Version="1.8.14" />
+    <PackageReference Include="Hangfire.Storage.SQLite" Version="0.4.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>

@@ -49,6 +49,7 @@ builder.Services.AddInteractiveService(config =>
 
 builder.Services.AddSingleton<InteractionRouter>();
 builder.Services.AddHostedService<InteractionHandler>();
+builder.Services.AddSingleton<GiveawayScheduler>();
 
 var host = builder.Build();
 
