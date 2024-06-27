@@ -51,4 +51,10 @@ public class Giveaway
     /// Gets the list of participants for this giveaway.
     /// </summary>
     public List<GiveawayParticipant> Participants { get; } = [];
+
+    /// <summary>
+    /// Gets the remaining time for this giveaway.
+    /// </summary>
+    [NotMapped]
+    public TimeSpan Remaining => ExpiresAt - DateTime.Now;
 }
