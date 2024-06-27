@@ -17,7 +17,6 @@ Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory);
 var builder = Host.CreateApplicationBuilder(args);
 
 builder.Services.AddNamedOptions<StartupOptions>();
-builder.Services.AddNamedOptions<ReferenceOptions>();
 
 builder.Services.AddSqlite<AppDbContext>(builder.Configuration.GetConnectionString("Default"));
 
