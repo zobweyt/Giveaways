@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 
 namespace Giveaways.Data;
 
@@ -51,6 +52,12 @@ public class Giveaway
     /// Gets the list of participants for this giveaway.
     /// </summary>
     public List<GiveawayParticipant> Participants { get; } = [];
+
+    /// <summary>
+    /// Gets the winners for this giveaway.
+    /// </summary>
+    [NotMapped]
+    public IEnumerable<GiveawayParticipant> Winners => Participants.Where(p => p.IsWinner);
 
     /// <summary>
     /// Gets the remaining time for this giveaway.
